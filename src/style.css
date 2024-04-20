@@ -1,0 +1,156 @@
+body,
+html {
+  background-image: url("./images/FUNDO.jpg");
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  align-content: center;
+
+}
+
+
+.função {
+  display: flex;
+  margin-left: 10px;
+  text-align: justify;
+  font-size: medium;
+  vertical-align: top;
+  color: rgb(255, 255, 255);
+}
+
+.card-text,
+.localizacao,
+.episodio {
+  color: white;
+}
+
+@keyframes colorScaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.card-text:hover,
+.localizacao:hover,
+.episodio:hover {
+  animation: colorScaleAnimation 0.4s;
+  cursor: pointer;
+  color: darkolivegreen;
+}
+
+
+
+@keyframes shineAnimation {
+  0% {
+    box-shadow: 0 0 5px 0 ;
+  }
+  50% {
+    box-shadow: 0 0 10px 5px ;
+  }
+  100% {
+    box-shadow: 0 0 5px 0 ;
+  }
+}
+
+.status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block; /* Alterado para inline-block */
+  margin-top: 8px;
+  margin-right: 5px;
+  position: relative;
+}
+
+.status.alive {
+  background-color: green;
+}
+
+.status.dead {
+  background-color: red;
+}
+
+.status.unknown {
+  background-color: gray;
+}
+
+.status:hover {
+  animation: shineAnimation 1s infinite linear;
+}
+
+
+
+
+
+.info-text {
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+}
+
+
+.nome {
+  display: inline-block;
+  vertical-align: middle;
+  /* alinha verticalmente com a bolinha */
+}
+
+.entitular {
+  color: rgba(250, 250, 250, 0.256);
+}
+
+
+#nextPageButton{
+  background-color: rgb(19, 104, 0);
+  border: 2px solid black;
+  border-radius: 7px;
+  color: black;
+  margin: 10px;
+  width: 5vw;
+  height: 5vh;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+#downPageButton{
+  background-color: rgb(19, 104, 0);;
+  border: 2px solid black;
+  border-radius: 7px;
+  color: black;
+  width: 5vw;
+  height: 5vh;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+#nextPageButton:hover{
+  background-color: rgb(88, 128, 19);
+  transform: scale(1.2);
+}
+
+#downPageButton:hover{
+  background-color: rgb(88, 128, 19);
+  transform: scale(1.2);
+}@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+#nextPageButton:hover {
+  background-color: rgb(88, 128, 19);
+  animation: scaleAnimation 0.4s;
+}
+
+#downPageButton:hover {
+  background-color: rgb(88, 128, 19);
+  animation: scaleAnimation 0.4s;
+}
+
